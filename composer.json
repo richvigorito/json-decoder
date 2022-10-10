@@ -1,5 +1,5 @@
 {
-    "name": "karriere/json-decoder",
+    "name": "richvigorito/json-decoder",
     "description": "JsonDecoder implementation that allows you to convert your JSON data into PHP class objects",
     "keywords": ["json", "decoder"],
     "license": "Apache-2.0",
