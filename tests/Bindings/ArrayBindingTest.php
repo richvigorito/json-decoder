@@ -52,17 +52,16 @@ class ArrayBindingTest extends TestCase
             'addresses' => [
                 'address key #1' => [
                     'street' => 'Street 1',
-                    'city'   => 'City 1',
+                    'city'  => 'City 1',
                 ],
-                'address key #2' =>  [
+                'address key #2' => [
                     'street' => 'Street 2',
-                    'city'   => 'City 2',
+                    'city'  => 'City 2',
                 ],
             ],
         ];
 
         $binding->bind(new JsonDecoder(), $jsonData, $property);
-
         $this->assertIsArray($person->address());
         $this->assertCount(2, $person->address());
         $this->assertEquals('Street 1', $person->address()['address key #1']->street());
